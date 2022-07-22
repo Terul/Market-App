@@ -21,12 +21,14 @@ public class appSystem {
     }
 
     public void showAllUsers() {
+        System.out.println("List of all users:");
         for (var usr : users) {
             System.out.println(usr.getInfo());
         }
     }
 
     public void showAllProducts() {
+        System.out.println("List of all products:");
         for (var prod : products) {
             System.out.println(prod.getInfo());
         }
@@ -44,14 +46,14 @@ public class appSystem {
     }
     
     public void getProductsOfUser(int userID) {
-        System.out.println("Products of user:");
+        System.out.println("Products of user with id " + userID + ":");
         for (Integer productID : productsOfUser.get(userID)) {
             System.out.println(products.get(productID).getInfo());
         }
     }
 
     public void getUsersOfProduct(int productID) {
-        System.out.println("Users that bought this product:");
+        System.out.println("Users that bought product with id " + productID + ":");
         for (Integer i : usersOfProduct.get(productID)) {
             System.out.println(users.get(i).getName());
         }
@@ -62,6 +64,7 @@ public class appSystem {
             usersOfProduct.get(productID).removeAll(Collections.singleton(userID));
         }
         productsOfUser.get(userID).clear();
+        System.out.println("User with id " + userID + " deleted successfully");
     }
 
     public void deleteProduct(int productID) {
@@ -69,5 +72,6 @@ public class appSystem {
             productsOfUser.get(userID).removeAll(Collections.singleton(productID));
         }
         usersOfProduct.get(productID).clear();
+        System.out.println("Product with id " + productID + " deleted successfully");
     }
 }
