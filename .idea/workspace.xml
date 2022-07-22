@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ffd73775-98ec-4a27-b5cc-00728627ce4f" name="Changes" comment="Fixed bug in deletion of users and products">
+    <list default="true" id="ffd73775-98ec-4a27-b5cc-00728627ce4f" name="Changes" comment="Added usage of final modifier when it is applicable">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AppSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppSystem.java" afterDir="false" />
     </list>
@@ -95,7 +95,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658499503339</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added usage of final modifier when it is applicable">
+      <created>1658499665238</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1658499665238</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -114,6 +121,7 @@
     <MESSAGE value="Improved feedback while adding new users and products" />
     <MESSAGE value="Improved feedback" />
     <MESSAGE value="Fixed bug in deletion of users and products" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed bug in deletion of users and products" />
+    <MESSAGE value="Added usage of final modifier when it is applicable" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added usage of final modifier when it is applicable" />
   </component>
 </project>

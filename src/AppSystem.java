@@ -41,17 +41,25 @@ public class AppSystem {
     }
 
     public void processTrade(int userID, int productID) {
-        if (users.get(userID).getBalance() < products.get(productID).getPrice()) {
+        if (userID >= users.size() || users.get(userID) == null) {
+            System.out.println("Such user doesn't exist");
+        } else if (productID >= products.size() || products.get(productID) == null) {
+            System.out.println("Such product doesn't exist");
+        } else if (users.get(userID).getBalance() < products.get(productID).getPrice()) {
             System.out.println("User doesn't have enough money");
         } else {
-            System.out.println("Trade is successful");
             users.get(userID).decreaseMoney(products.get(productID).getPrice());
             productsOfUser.get(userID).add(productID);
             usersOfProduct.get(productID).add(userID);
+            System.out.println("Trade is successful");
         }
     }
     
     public void getProductsOfUser(int userID) {
+        if (userID >= users.size() || users.get(userID) == null) {
+            System.out.println("Such user doesn't exist");
+            return;
+        }
         System.out.println("Products of user with id " + userID + ":");
         for (Integer productID : productsOfUser.get(userID)) {
             System.out.println(products.get(productID).getInfo());
@@ -59,6 +67,10 @@ public class AppSystem {
     }
 
     public void getUsersOfProduct(int productID) {
+        if (productID >= products.size() || products.get(productID) == null) {
+            System.out.println("Such product doesn't exist");
+            return;
+        }
         System.out.println("Users that bought product with id " + productID + ":");
         for (Integer i : usersOfProduct.get(productID)) {
             System.out.println(users.get(i).getName());
@@ -66,6 +78,10 @@ public class AppSystem {
     }
 
     public void deleteUser(int userID) {
+        if (userID >= users.size() || users.get(userID) == null) {
+            System.out.println("Such user already doesn't exist");
+            return;
+        }
         for (Integer productID : productsOfUser.get(userID)) {
             usersOfProduct.get(productID).removeAll(Collections.singleton(userID));
         }
@@ -75,6 +91,10 @@ public class AppSystem {
     }
 
     public void deleteProduct(int productID) {
+        if (productID >= products.size() || products.get(productID) == null) {
+            System.out.println("Such product doesn't exist");
+            return;
+        }
         for (Integer userID : usersOfProduct.get(productID)) {
             productsOfUser.get(userID).removeAll(Collections.singleton(productID));
         }
