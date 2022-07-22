@@ -7,15 +7,17 @@ public class appSystem {
     private ArrayList<ArrayList<Integer>> productsOfUser = new ArrayList<>();
     private ArrayList<ArrayList<Integer>> usersOfProduct = new ArrayList<>();
     public void addUser(String firstName, String lastName, int amountOfMoney) {
-        int id = users.size();
-        users.add(new User(id, firstName, lastName, amountOfMoney));
+        int userID = users.size();
+        users.add(new User(userID, firstName, lastName, amountOfMoney));
         productsOfUser.add(new ArrayList<>());
+        System.out.println("User added with id = " + userID);
     }
 
     public void addProduct(String name, int price) {
-        int id = products.size();
-        products.add(new Product(id, name, price));
+        int productID = products.size();
+        products.add(new Product(productID, name, price));
         usersOfProduct.add(new ArrayList<>());
+        System.out.println("Product added with id = " + productID);
     }
 
     public void showAllUsers() {
