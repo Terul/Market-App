@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class appSystem {
+public class AppSystem {
     private ArrayList<User> users = new ArrayList<>();
     private ArrayList<Product> products = new ArrayList<>();
     private ArrayList<ArrayList<Integer>> productsOfUser = new ArrayList<>();
@@ -23,6 +23,9 @@ public class appSystem {
     public void showAllUsers() {
         System.out.println("List of all users:");
         for (var usr : users) {
+            if (usr == null) {
+                continue;
+            }
             System.out.println(usr.getInfo());
         }
     }
@@ -30,6 +33,9 @@ public class appSystem {
     public void showAllProducts() {
         System.out.println("List of all products:");
         for (var prod : products) {
+            if (prod == null) {
+                continue;
+            }
             System.out.println(prod.getInfo());
         }
     }
@@ -64,6 +70,7 @@ public class appSystem {
             usersOfProduct.get(productID).removeAll(Collections.singleton(userID));
         }
         productsOfUser.get(userID).clear();
+        users.set(userID, null);
         System.out.println("User with id " + userID + " deleted successfully");
     }
 
@@ -72,6 +79,7 @@ public class appSystem {
             productsOfUser.get(userID).removeAll(Collections.singleton(productID));
         }
         usersOfProduct.get(productID).clear();
+        products.set(productID, null);
         System.out.println("Product with id " + productID + " deleted successfully");
     }
 }

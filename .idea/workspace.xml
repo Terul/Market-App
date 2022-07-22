@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ffd73775-98ec-4a27-b5cc-00728627ce4f" name="Changes" comment="Improved feedback while adding new users and products">
+    <list default="true" id="ffd73775-98ec-4a27-b5cc-00728627ce4f" name="Changes" comment="Improved feedback">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/appSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/appSystem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/appSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppSystem.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +82,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658498809826</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Improved feedback">
+      <created>1658499125322</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1658499125322</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -98,6 +106,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First build" />
     <MESSAGE value="Improved feedback while adding new users and products" />
-    <option name="LAST_COMMIT_MESSAGE" value="Improved feedback while adding new users and products" />
+    <MESSAGE value="Improved feedback" />
+    <option name="LAST_COMMIT_MESSAGE" value="Improved feedback" />
   </component>
 </project>

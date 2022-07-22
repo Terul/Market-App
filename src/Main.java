@@ -1,6 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-        appSystem market = new appSystem();
+        AppSystem market = new AppSystem();
 
         market.addUser("Petro", "Shevchenko", 100);
         market.addUser("Mykola", "Bondarenko", 12);
