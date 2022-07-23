@@ -41,9 +41,9 @@ public class AppSystem {
     }
 
     public void processTrade(int userID, int productID) {
-        if (userID >= users.size() || users.get(userID) == null) {
+        if (userID < 0 || userID >= users.size() || users.get(userID) == null) {
             System.out.println("Such user doesn't exist");
-        } else if (productID >= products.size() || products.get(productID) == null) {
+        } else if (productID < 0 || productID >= products.size() || products.get(productID) == null) {
             System.out.println("Such product doesn't exist");
         } else if (users.get(userID).getBalance() < products.get(productID).getPrice()) {
             System.out.println("User doesn't have enough money");
@@ -67,7 +67,7 @@ public class AppSystem {
     }
 
     public void getUsersOfProduct(int productID) {
-        if (productID >= products.size() || products.get(productID) == null) {
+        if (productID < 0 || productID >= products.size() || products.get(productID) == null) {
             System.out.println("Such product doesn't exist");
             return;
         }
@@ -78,7 +78,7 @@ public class AppSystem {
     }
 
     public void deleteUser(int userID) {
-        if (userID >= users.size() || users.get(userID) == null) {
+        if (userID < 0 || userID >= users.size() || users.get(userID) == null) {
             System.out.println("Such user already doesn't exist");
             return;
         }
@@ -91,7 +91,7 @@ public class AppSystem {
     }
 
     public void deleteProduct(int productID) {
-        if (productID >= products.size() || products.get(productID) == null) {
+        if (productID < 0 || productID >= products.size() || products.get(productID) == null) {
             System.out.println("Such product doesn't exist");
             return;
         }
