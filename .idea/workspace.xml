@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ffd73775-98ec-4a27-b5cc-00728627ce4f" name="Changes" comment="Improved exception handling">
+    <list default="true" id="ffd73775-98ec-4a27-b5cc-00728627ce4f" name="Changes" comment="Improved code readability">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AppSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppSystem.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -115,7 +116,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658571732203</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Improved code readability">
+      <created>1658571793109</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1658571793109</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -136,6 +144,7 @@
     <MESSAGE value="Fixed bug in deletion of users and products" />
     <MESSAGE value="Added usage of final modifier when it is applicable" />
     <MESSAGE value="Improved exception handling" />
-    <option name="LAST_COMMIT_MESSAGE" value="Improved exception handling" />
+    <MESSAGE value="Improved code readability" />
+    <option name="LAST_COMMIT_MESSAGE" value="Improved code readability" />
   </component>
 </project>

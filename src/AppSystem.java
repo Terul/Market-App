@@ -57,7 +57,7 @@ public class AppSystem {
     }
     
     public void getProductsOfUser(int userID) {
-        if (userID >= users.size() || users.get(userID) == null) {
+        if (userID < 0 || userID >= users.size() || users.get(userID) == null) {
             System.out.println("Such user doesn't exist");
             return;
         }
