@@ -6,6 +6,7 @@ public class AppSystem {
     private final ArrayList<Product> products = new ArrayList<>();
     private final ArrayList<ArrayList<Integer>> productsOfUser = new ArrayList<>();
     private final ArrayList<ArrayList<Integer>> usersOfProduct = new ArrayList<>();
+
     public void addUser(String firstName, String lastName, int amountOfMoney) {
         int userID = users.size();
         users.add(new User(userID, firstName, lastName, amountOfMoney));
